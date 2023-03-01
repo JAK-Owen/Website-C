@@ -1,0 +1,307 @@
+body {
+  background-color: #111111;
+  color: #e1c33d;
+  border: solid 50px #111111;
+}
+
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font: 0.75em/1.5 Helvetica, Arial, sans-serif;
+  margin-top: 0px;
+  height: 100%;
+
+}
+
+.global-font {
+  font-family: Helvetica, Arial, sans-serif !important;
+  text-transform: uppercase !important;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+/* NAVBAR */
+
+
+
+.nav-container {
+  padding: 80px 40px 150px 40px;
+  background-color: #000000;
+
+}
+
+@media screen and (max-width: 799px) {
+  .mob-padding-nav {
+    padding: 50px 40px 300px 40px;
+  }
+}
+
+
+.tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.tabs__item {
+  width: 100%;
+  float: left;
+}
+
+@media screen and (min-width: 50em) {
+  .tabs__item {
+    display: table-cell;
+    float: none;
+    width: auto;
+  }
+}
+
+.tabs__link {
+  display: block;
+}
+
+
+
+.primary-nav {
+  text-align: center;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.primary-nav a {
+  padding: .75em 1em;
+  color: #e1c33d;
+  background: none;
+  color: #e1c33d;
+  text-decoration: none;
+
+  font-family: Share, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.75em;
+  transition: linear 0.2s;
+}
+
+.primary-nav a:hover {
+  color: #ab9532;
+
+  transition: linear 0.2s;
+}
+
+/* Responsive-nav.js */
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+    position: relative;
+  }
+
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+.nav-collapse {
+  list-style: none;
+  width: 100%;
+  float: left;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+/* NAVBAR END */
+
+
+/* HERO */
+
+.hero-container {
+  padding-top: 600px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/_mountain.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-top: #e1c33d solid 1px;
+  border-bottom: #e1c33d solid 1px;
+}
+
+
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e1c33d;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: #e1c33d;
+  border: solid 1px #e1c33d;
+  background-color: #000000;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.hero-text button:hover {
+  background-color: none;
+  color: #ab9532;
+  transition: 0.2s linear;
+  border: solid 1px #ab9532;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+/* HERO END*/
+
+
+
+/* FOOTER */
+
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 60px 0;
+  /* min-height: 100vh;*/
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-area {
+  border-bottom: 1px solid #e1c33d;
+}
+
+.contact-content p {
+  font-size: 15px;
+  margin: 30px 0 60px;
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.contact-content p::after {
+  background: #000000;
+  bottom: -30px;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  width: 80%;
+}
+
+.contact-content h6 {
+  color: #ab9532;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.contact-content span {
+  color: #ab9532;
+  margin: 0 10px;
+}
+
+.contact-social {
+  margin-top: 30px;
+}
+
+.contact-social>ul {
+  display: inline-flex;
+}
+
+.contact-social ul li a {
+  border: 1px solid #ab9532;
+  color: #ab9532;
+  display: inline-block;
+  height: 40px;
+  margin: 0 10px;
+  padding-top: 7px;
+  transition: all 0.4s ease 0s;
+  width: 40px;
+}
+
+.contact-social ul li a:hover {
+  border: 1px solid #FAB702;
+  color: #FAB702;
+}
+
+.contact-content img {
+  max-width: 210px;
+}
+
+section,
+footer {
+  background: #000000;
+  color: #ab9532;
+
+}
+
+footer p {
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer img {
+  width: 44px;
+}
+
+/* FOOTER */
